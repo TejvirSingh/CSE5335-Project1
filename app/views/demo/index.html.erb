@@ -1,0 +1,49 @@
+<!DOCTYE html> 
+<html>
+  <head>
+   <title>Web data Management Project CSE 5335</title>
+   <h3>Name:Tejvir Singh Saggu</h3>
+   <h3>Student Id: 1001357605</h3>
+        <script>
+      var countryApp = angular.module('countryApp', []);
+      countryApp.controller('CountryCtrl', function ($scope, $http){
+      	$scope.clickButton = function(){
+      	  $http.get('http://localhost:3000/demo/countries.json').success(function(data) {
+              $scope.countries = data;	
+          });
+  	    }
+     });
+    </script>
+
+
+
+  </head>	
+  
+  <body>
+    <div ng-app = "countryApp">
+    <div ng-controller="CountryCtrl">
+  <h2>Country - Population Data</h2>
+    
+    <button ng-click="clickButton()">Get Data</button>
+	  
+    <table>
+      <tr>
+        <th>Code</th>
+		<th>Country</th>
+        <th>Population</th>
+      </tr>
+      <tr ng-repeat="country in countries">
+        <td>{{country.code}}</td>
+		<td>{{country.name}}</td>
+        <td>{{country.population}}</td>
+      </tr>
+    </table>
+
+   </div> 
+ </div>
+
+ </body>
+    
+</html>
+
+
