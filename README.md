@@ -27,8 +27,9 @@ git commit -m "message while commiting"
 git remote add origin *remote_repository_url*
 git push origin master
 >>~~~~
-Because in order to deploy the application on the heroku website we are connecting the github repo with it. Then using the GUI on the heroku website in order to deploy the application. 
-For running 
+Because in order to deploy the application on the heroku website we are connecting the github repo with it. Then using the GUI on the heroku website in order to deploy the application.  
+>>
+For running: 
 >>~~~~
 rails new generate "app_name"
 bundle install
