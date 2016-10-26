@@ -8,7 +8,7 @@
       var countryApp = angular.module('countryApp', []);
       countryApp.controller('CountryCtrl', function ($scope, $http){
       	$scope.clickButton = function(){
-      	  $http.get('http://localhost:3000/demo/countries.json').success(function(data) {
+      	  $http.get('https://cse5335-txs7605.herokuapp.com/demo/countries.json').success(function(data) {
               $scope.countries = data;	
           });
   	    }
