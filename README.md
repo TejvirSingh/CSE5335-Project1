@@ -19,16 +19,16 @@
  
 6. ##What Ubuntu commands are required to deploy and run your server?
 >>####Commands that were used to deploy and run the project on the server were : 
->>For deploying:
-~~~~
->>git add .
->>git commit -m "message while commiting"
->>git push origin master
-~~~~
->>For running 
-~~~~
->>rails new generate "app_name"
->>bundle install
->>rails server
-~~~~
+For deploying:
+>>~~~~
+git add .
+git commit -m "message while commiting"
+git push origin master
+>>~~~~
+For running 
+>>~~~~
+rails new generate "app_name"
+bundle install
+rails server
+>>~~~~
 
