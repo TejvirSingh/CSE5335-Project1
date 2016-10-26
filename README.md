@@ -30,6 +30,7 @@
 >>For running 
 ~~~~
 >>rails new generate "app_name"
+>>bundle install
 >>rails server
 ~~~~
 
